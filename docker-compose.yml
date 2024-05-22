@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  my-python:
+    image: python:latest
+    container_name: my-py
+    hostname: my-py
+    tty: true
+    working_dir: /app/LearningPython
+    volumes:
+      - $PWD:/app/LearningPython
+    
